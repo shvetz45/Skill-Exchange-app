@@ -1,139 +1,100 @@
-# 🤝 Skill Exchange App – Android App
+# Skill Exchange App
 
-A modern Android application designed to connect people who want to learn and teach skills. The app enables users to share knowledge, find mentors, and collaborate through a simple and structured platform.
+Skill Exchange is a native Android app for connecting people who want to learn, teach, and exchange practical skills. Users can register, sign in, post learning needs, browse available requests, make offers, manage their profile, and view swap history.
 
----
+## Current UI
 
-## 🚀 Features
+The app has been updated with a refreshed visual style:
 
-• 🔐 User registration and secure login
-• 👤 Profile creation and update
-• 🧠 Add skills you can teach
-• 🎯 Request skills you want to learn
-• 🔍 Search and filter users by skills
-• 💬 Chat or connect with other users
-• 📊 Dashboard to track activity
-• 🔔 Notifications and updates
-• ⚡ Fast and clean user experience
+- Teal, coral, and warm neutral color scheme
+- Redesigned splash, login, and dashboard screens
+- Updated cards, chips, toolbar styling, and feed items
+- Cleaner labels for request browsing and profile actions
+- Lightweight XML-based UI for better emulator compatibility
 
----
+## Features
 
-## 🛠️ Tech Stack
+- User registration and secure login
+- Profile creation and editing
+- Post skill-learning requests
+- Browse recent skill requests
+- Offer help on posted needs
+- Track trust score and completed collaborations
+- View swap/history records
+- Settings screen for preferences
 
-• Language: Java or Kotlin
-• Platform: Android SDK
-• UI: XML Layouts
-• Database: SQLite or Room
-• Architecture: MVVM
+## Tech Stack
 
----
+- Kotlin
+- Android SDK
+- XML layouts
+- Material Components / Material 3
+- Room database
+- MVVM architecture
+- Gradle Kotlin DSL
 
-## 📂 Project Structure
+## Project Structure
 
-com.example.skillexchangeapp
+```text
+app/src/main/java/com/example/skillexchangeapp
+|-- data
+|   |-- local
+|   |   |-- dao
+|   |   `-- entity
+|   `-- repository
+|-- ui
+|   |-- adapter
+|   |-- fragment
+|   |-- theme
+|   `-- viewmodel
+`-- utils
+```
 
-ui/ → Activities and UI logic
-data/ → Models and database handling
-adapter/ → RecyclerView adapters
-network/ → API or communication layer
-utils/ → Helper and utility classes
+## How To Run
 
----
+1. Clone the repository:
 
-## ⚙️ Setup Instructions
+```bash
+git clone https://github.com/shvetz45/Skill-Exchange-app.git
+```
 
-### Clone the Repository
+2. Open the project in Android Studio.
 
-git clone https://github.com/malikarshid01430-byte/Skill-Exchange-app.git
+3. Wait for Gradle Sync to complete.
 
----
+4. Start an Android emulator or connect an Android device.
 
-### Or Download ZIP
+5. Click Run in Android Studio.
 
-1. Go to the repository on GitHub
-2. Click Code
-3. Click Download ZIP
-4. Locate the downloaded file
-5. Right click and extract
-6. Open the extracted folder
+You can also build from terminal:
 
----
+```powershell
+cd Skill-Exchange-app
+.\gradlew.bat assembleDebug
+```
 
-### Import into Android Studio
+To install on a connected emulator/device:
 
-1. Open Android Studio
-2. Click Open
-3. Select the project folder
-4. Wait for Gradle sync
-5. Click Run to launch
+```powershell
+.\gradlew.bat installDebug
+```
 
----
+## Emulator Recommendation
 
-## 📦 Modules
+For smoother performance on low-storage or lower-RAM laptops, use a light emulator:
 
-LoginActivity
-Handles user authentication
+- Device: Medium Phone, Pixel 4, or Pixel 5
+- API: 35 or 36
+- RAM: 2048 MB
+- Internal storage: 8 GB
+- Prefer Google APIs x86_64 image
 
-RegisterActivity
-Handles new user registration
+Avoid large devices like Pixel 9 Pro or API 37 images if the emulator is lagging.
 
-MainActivity
-Displays dashboard and navigation
+## Repository
 
-ProfileActivity
-Manages user profile and skills
+GitHub: https://github.com/shvetz45/Skill-Exchange-app
 
-SkillActivity
-Handles skill adding and listing
+## Purpose
 
-SearchActivity
-Search users based on skills
-
-ChatActivity
-Enables user communication
-
-SettingsActivity
-Manages preferences and logout
-
----
-
-## 🎯 Purpose
-
-This app helps users exchange knowledge in a structured way. It supports peer learning and builds a collaborative environment for skill development.
-
----
-
-## 🔮 Future Improvements
-
-• AI based skill matching
-• Video call integration
-• Rating and feedback system
-• Cloud database integration
-• Dark mode support
-
----
-
-## 🤝 Contributing
-
-Fork the repository
-Create a new branch
-Make changes and commit
-Push and create a pull request
-
----
-
-## 📄 License
-
-This project is for educational and development purposes
-
----
-
-## 👨‍💻 Author
-
-Developed by Arshid Ahmad Malik
-
----
-
-## ⭐ Support
-
-If you find this project useful, give it a star
+This app was built as an educational Android project to support peer learning, local skill discovery, and structured collaboration between learners and mentors.
