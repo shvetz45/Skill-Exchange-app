@@ -95,6 +95,10 @@ Avoid large devices like Pixel 9 Pro or API 37 images if the emulator is lagging
 
 GitHub: https://github.com/shvetz45/Skill-Exchange-app
 
+## Author
+
+Developed by Shvethank B
+
 ## Purpose
 
 This app was built as an educational Android project to support peer learning, local skill discovery, and structured collaboration between learners and mentors.
